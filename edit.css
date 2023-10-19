@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,textarea{
+    outline: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.edit-card{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imageUpload{
+    color: transparent;
+}
+.imageUpload::-webkit-file-upload-button{
+
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    margin: 3rem 0;
+    padding: 1rem;
+    background-color: #536942;
+    color: white;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
+}
+.edit-card-title{
+    padding: 0.5rem;
+    margin-bottom:2rem ;
+}
+.edit-card-description{
+    padding: 0.5rem;
+    height: 6rem;
+    max-height: 10rem;
+    overflow-wrap: break-word;
+    resize: none;
+}
+.edit-card-button,.edit-add{
+    margin-top: 1rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    color: white;
+    background-color: #536942;
+    border: none;
+    transition: all 0.3s;
+}
+.edit-add{
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+@media screen and (min-width:450px){
+    .popular-card{
+        width: 50%;
+    }
+    .popular-img img{
+object-fit: contain;
+    }
+}
+.edit-delete{
+    margin-bottom:3rem ;
+    padding: 1rem;
+    background-color: rgb(199, 56, 56);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+.edit-delete:hover{
+    transition: all 0.3s;
+    background-color: rgb(255, 0, 0);
+}

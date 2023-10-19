@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,500&family=Exo:wght@400;500;600;700;900&family=Pixelify+Sans:wght@400;700&family=Poppins:wght@500&family=Roboto:wght@100;300;700;900&family=Skranji:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-img{
+    object-fit: cover;
+}
+.home-title{
+    font-size: 4rem;
+    top: 50%;
+    right: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.blogs-card{
+    display: flex;
+    margin: 4rem 10rem;
+}
+.blogs-img{
+    width: 40%;
+}
+.blogs-detills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+ width: 60%;
+}
+.blogs-detills-title{
+    cursor: pointer;
+    transition: all 0.3s;
+color: #000;
+font-size: 2rem;
+margin-bottom:1rem ;
+font-weight: 400;
+word-wrap: break-word;
+}
+.blogs-img img{
+    border-radius: 30px;
+    cursor: pointer;
+  
+}
+.blogs-daet{
+    margin: 1rem 0;
+}
+.blogs-daet,.blogs-detills-descriptoin{
+    color: hsl(0, 0%, 35%); 
+}
+.blogs-detills-descriptoin{
+    word-wrap:break-word;
+}
+.blogs-date span{
+    margin-left:1rem ;
+}
+/*------------------in phone------------------/*/
+@media screen and (max-width:450px){
+    .home-title{
+        font-size: 2rem;
+        top: 40%;
+        right: 5%;
+        text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+    }
+    .blogs-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+       margin:0;
+       align-items: center;
+    }
+    .blogs-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .blogs-img img{
+        width: 90%;
+        margin: auto;
+    }
+    .blogs-detills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+     width: 80%;
+     margin-bottom: 3rem;
+    }
+    .blogs-detills-title{
+        cursor: pointer;
+        transition: all 0.3s;
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom:0.725rem ;
+    font-weight: 400;
+    word-wrap: break-word;
+    }
+    .blogs-detills-descriptoin{
+        font-size: small;
+    }
+}

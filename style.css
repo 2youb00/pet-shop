@@ -200,7 +200,6 @@ a:hover{
         font-size: small;
     }
 }
-
 /***-----------------end--home in phone *-----------------*/ 
 /***-----------------about *-----------------*/ 
 .card-email{
@@ -244,7 +243,10 @@ background-color: transparent;
     cursor: pointer;
     transition: all 0.3s;
 }
-.card-email-button:hover ,.popular-button button:hover{
+.card-email-button:hover ,.popular-button button:hover 
+,.imageUpload::-webkit-file-upload-button:hover
+,.edit-card-button:hover
+,.edit-add:hover{
     transition: all 0.3s;
 background-color: #88df41;
 }
@@ -289,7 +291,7 @@ align-items: center;
 }
 .popular-card{
     width: 80%;
-    max-height: 80%;
+    height: 95%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: #00000031 solid 1px;
     margin-bottom:1rem ;
@@ -300,14 +302,18 @@ align-items: center;
     margin: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s;
+    word-wrap: break-word;
 }
-.popular-detills-title:hover{
+.popular-detills-title:hover
+,.blogs-detills-title:hover{
     color: #536942;
 }
 .popular-detills-descriptoin{
     margin: 0rem 1rem 2rem ;
     color: #808080;
+    word-wrap: break-word;
 }
+
 .popular-button button{
     background-color: #536942;
     color: #fff;
@@ -319,6 +325,7 @@ align-items: center;
     transition: all 0.3s;
     width: 150px;
   font-weight: 600;
+
 }
 .popular-card .popular-img img {
     transition: all 0.5s ease-in-out;
@@ -380,23 +387,43 @@ margin-top: 2rem;text-align: center;
 @media screen and (min-width:450px) {
 .footer-container{
 flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+
 }
 .footer-li a,.footer-text{
     color: #000;
     font-size: medium;
 }
 .footer-ul{
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     gap: 2rem;
-   position: relative;
-   right:100% ;
+    justify-content: center;
+   
 }
 .footer-logo img{
     width: 75px;
+}
+.footer-logo{
+width: 100vw;
+display: flex;
+justify-content: center;
+}
+.footer-logo img{
+    margin-right: -50px;
 }
 .footer-text{
     position: absolute;
     left: 85%;
 }
+.footer-header{
+    position: absolute;
+left: 50px;
+margin-top: 20px;
 }
+
+}
+/*-------------------------blogs edit--------------------/*/
